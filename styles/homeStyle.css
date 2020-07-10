@@ -14,6 +14,10 @@ h2{
 	font-size: 20pt;
 	font-weight: 900;
 	color: #020703;
+	padding-top: 43px;
+}
+img{
+	padding: 0;
 }
 p{
 	font-size: 16pt;
@@ -46,15 +50,11 @@ header{
 	width: 50vw;
 	padding-top: 16px;
 	padding-left: 8px;
+	overflow: hidden;
 }
 #par3{
 	text-align: center;
 	padding-top: 16px;
-}
-img{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
 }
 footer{
 	text-align: center;
@@ -66,6 +66,9 @@ footer{
 	header{
 		padding: 8px;
 		display: block;
+	}
+	h2{
+		padding-top: 8px;
 	}
 	#bod{
 		display: block;
@@ -82,6 +85,7 @@ footer{
 	}
 	footer{
 		position:inherit;
+		padding-top: 16px;
 		padding-bottom: 8px;
 	}
 }

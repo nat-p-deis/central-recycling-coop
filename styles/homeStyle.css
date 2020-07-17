@@ -19,10 +19,15 @@ h2{
 img{
 	padding: 0;
 }
-p{
+p,ul{
 	font-size: 16pt;
 	font-weight: 400;
 	color: #020703;
+}
+ul{
+	list-style-position: inside;
+  	list-style-image: url(../images/bullet.png);
+	overflow: hidden;
 }
 #img{
 	position: relative;
@@ -42,19 +47,15 @@ header{
 	display: flex;
 	justify-content: space-between;
 }
-#bod{
+#bod1,#bod2{
 	padding: 8px 8%;
 	display: flex;
 }
-#par1, #par2{
+#par1, #par2, #par3, #par4{
 	width: 50vw;
 	padding-top: 16px;
 	padding-left: 8px;
 	overflow: hidden;
-}
-#par3{
-	text-align: center;
-	padding-top: 16px;
 }
 footer{
 	text-align: center;
@@ -62,7 +63,7 @@ footer{
     bottom: 16px;
     width: 100vw;
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
 	header{
 		padding: 8px;
 		display: block;
@@ -70,18 +71,13 @@ footer{
 	h2{
 		padding-top: 8px;
 	}
-	#bod{
+	#bod1,#bod2{
 		display: block;
 		padding: 8px;
 	}
-	#par1, #par2{
+	#par1, #par2,#par3,#par4{
 		width: 100%;
 		padding-right: 16px;
-	}
-	#par3{
-		text-align: left;
-		padding-left: 16px;
-		padding-top: 8px;
 	}
 	footer{
 		position:inherit;
@@ -89,7 +85,7 @@ footer{
 		padding-bottom: 8px;
 	}
 }
-@media screen and (max-height: 800px){
+@media screen and (max-height: 900px){
 	footer{
 		position:inherit;
 		padding-bottom: 8px;
